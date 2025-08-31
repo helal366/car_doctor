@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 
 export default async function Services() {
@@ -6,14 +7,20 @@ export default async function Services() {
   return (
     <section>
         <h1 className='text-4xl text-center font-semibold my-6'>
-            Services: {data?.length}
+            Services : {data?.length}
         </h1>
-        <div className='grid grid-cols-12'>
-
+        <div className='grid grid-cols-3 gap-5'>
+            {
+                data?.map((item)=>{
+                    return (
+                        <div key={item?._id} className='border-2 border-green-600 overflow-hidden'>
+                            <Image src={item?.img} width={314} height={208} alt={item?.title}/>
+                        </div>
+                    )
+                })
+            }
         </div>
-        {
-            JSON.stringify(data)
-        }
+        
     </section>
   )
 }

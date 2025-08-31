@@ -9,7 +9,7 @@ export default async function Services() {
         <h1 className='text-4xl text-center font-semibold my-6'>
             Services : {data?.length}
         </h1>
-        <div className='grid grid-cols-3 gap-5'>
+        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
             {
                 data?.map((item)=>{
                     return (

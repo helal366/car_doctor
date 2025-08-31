@@ -1,3 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+.padding{
+  @apply px-2 sm:px-4 md:px-12 lg:px-20 xl:px-32 2xl:px-40
+}

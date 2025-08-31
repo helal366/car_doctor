@@ -13,7 +13,7 @@ const links = <>
 
 export default function Navbar() {
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <section className="navbar bg-base-100 shadow-sm padding">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -26,7 +26,7 @@ export default function Navbar() {
                     </ul>
                 </div>
                 <Link href={'/'} className="text-xl">
-                    <Image src={'/assets/logo.svg'} width={90} height={73} />
+                    <Image src={'/assets/logo.svg'} width={90} height={73} alt='Logo' />
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
@@ -35,8 +35,8 @@ export default function Navbar() {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <a className="btn btn-outline text-red-600">Appointment</a>
             </div>
-        </div>
+        </section>
     )
 }

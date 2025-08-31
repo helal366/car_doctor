@@ -13,7 +13,7 @@ const links = <>
 
 export default function Navbar() {
     return (
-        <section className="navbar bg-base-100 shadow-sm padding">
+        <section className="navbar bg-gray-100 shadow-sm padding">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -21,7 +21,7 @@ export default function Navbar() {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        className="menu menu-sm dropdown-content bg-gray-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                        {links}
                     </ul>
                 </div>

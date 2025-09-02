@@ -24,7 +24,7 @@ export default async function Services() {
                                         <h3 className='text-lg font-bold text-orange-500'>Price : ${item?.price}</h3>
                                     </div>
                                     <div>
-                                        <Link href={'/'} className='font-extrabold text-orange-500'>
+                                        <Link href={`/services/${item?._id}`} className='font-extrabold text-orange-500'>
                                             <FaArrowRight />
                                         </Link>
                                     </div>

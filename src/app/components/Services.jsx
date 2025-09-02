@@ -1,9 +1,12 @@
+import dbConnect from '@/lib/dbConnect';
 import Image from 'next/image';
 import React from 'react'
 
 export default async function Services() {
     const res = await fetch(`${process.env.NEXT_BASE_URL || "http://localhost:3000"}/services.json`);
     const data = await res.json();
+    const servicesCollection = dbConnect("services");
+    const servicees= await servicesCollection.find({})
     return (
         <section>
             <h1 className='text-4xl text-center font-semibold my-6'>

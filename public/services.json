@@ -1,6 +1,5 @@
 [
-    {
-        
+    {    
         "service_id": "04",
         "title": "Engine Oil Change",
         "img": "https://i.ibb.co/T2cpBd5/888.jpg",
@@ -25,8 +24,7 @@
             }
         ]
     },
-    {
-        
+    {    
         "service_id": "05",
         "title": "Battery Charge",
         "img": "https://i.ibb.co/ydCbDN3/5555.jpg",
@@ -51,8 +49,7 @@
             }
         ]
     },
-    {
-        
+    {   
         "service_id": "01",
         "title": "Full car Repair",
         "img": "https://i.ibb.co/R6Z2nFM/55.jpg",

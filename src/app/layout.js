@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        <section className="padding">
+        <section className="padding bg-gray-300/50">
           {children}
         </section>
       </body>

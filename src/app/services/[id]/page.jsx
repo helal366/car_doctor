@@ -1,7 +1,10 @@
 import React from 'react'
 
-export default function ServiceDetailsPage() {
+export default async function ServiceDetailsPage({params}) {
+    const p=await params
   return (
-    <section>ServiceDetailsPage</section>
+    <section>
+        Service Details for {p?.id}
+    </section>
   )
 }

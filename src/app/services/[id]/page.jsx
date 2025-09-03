@@ -3,19 +3,26 @@ import { ObjectId } from 'mongodb';
 import Image from 'next/image';
 import React from 'react'
 
-export default async function ServiceDetailsPage({params}) {
-    const {id}=await params;
-    const servicesCollection= await dbConnect(collectionNames.servicesCollection);
-    const service=await servicesCollection.findOne({_id: new ObjectId(id)})
+export default async function ServiceDetailsPage({ params }) {
+  const { id } = await params;
+  const servicesCollection = await dbConnect(collectionNames.servicesCollection);
+  const service = await servicesCollection.findOne({ _id: new ObjectId(id) })
   return (
-    <section>
-        <section>
-          <Image className='w-full' src="/assets/images/checkout/checkout.png" alt="Banner" width={1137} height={300}/>
-        </section>
-        <div>
-          Service Details for {id}
-        </div>
-        <p>{JSON.stringify(service)}</p>
+    <section className='py-10'>
+      <section>
+        <figure className='w-full relative'>
+          <Image className='w-full' src="/assets/images/checkout/checkout.png" alt="Banner" width={1137} height={300} />
+          <div className='absolute w-full h-full border-2 border-red-400 top-0'>
+            <div className='flex items-center ps-10 w-full h-full'>            
+              <h1 className='text-red-400'>Service Details</h1>
+            </div>
+          </div>
+        </figure>
+      </section>
+      <div>
+        Service Details for {id}
+      </div>
+      <p>{JSON.stringify(service)}</p>
     </section>
   )
 }

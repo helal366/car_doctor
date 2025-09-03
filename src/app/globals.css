@@ -5,6 +5,6 @@
   @apply px-2 sm:px-4 md:px-12 lg:px-20 xl:px-32 2xl:px-40
 }
 .overlay-bg{
-  background: #ffffff;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 11%, rgba(0, 0, 0, 1) 100%);
+  background: #050101;
+  background: linear-gradient(90deg, rgba(5, 1, 1, 0.8) 0%, rgba(107, 105, 105, 0.5) 48%, rgba(255, 255, 255, 0.6) 100%);
 }
